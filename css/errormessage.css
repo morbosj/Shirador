@@ -1,0 +1,166 @@
+	.disable {
+		opacity: 0.5;
+		cursor: not-allowed;
+		background: black;
+	}
+
+	input[disabled="disabled"] {
+		opacity: 0.5;
+		cursor: not-allowed;
+		background: black;
+	}
+	.error {
+		position: absolute;
+		padding-left: 10px;
+		font-size: 14px;
+		color: #DB222A;
+		background: #2C3742;
+
+	}
+	.error i {
+		background: #2C3742;
+	}
+	.error2 {
+		margin-top: -22px;
+	}
+	.valid {
+		position: absolute;
+		padding-left: 10px;
+		font-size: 14px;
+		color: #1ED760;
+	}
+
+
+
+
+	#register-error {
+		position: absolute;
+		top: 100px;
+		right: 10px;
+		width: 350px;
+		text-align: center;
+		font-size: 18px;
+	}
+	#register-error2 {
+		position: absolute;
+		top: 100px;
+		right: 10px;
+		width: 350px;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	#admin-error {
+		position: absolute;
+		top: 100px;
+		right: 10px;
+		width: 350px;
+		text-align: center;
+		font-size: 18px;
+	}
+
+	#regad:hover {
+		text-decoration: underline;
+	}
+
+	.label {
+		background: #777;
+	}
+
+	.label-default {
+		display:inline;
+		padding:.2em .6em .3em;
+		font-size:75%;
+		font-weight:700;
+		line-height:1;
+		color:#fff;
+		text-align:center;
+		white-space:nowrap;
+		vertical-align:baseline;
+		border-radius:.25em;
+	}
+	#usercircle{
+		width: 100%;
+	}
+
+	.strong   { background-color: #060; }
+	.medium   { background-color: #C60; }
+	.weak     { background-color: #900; }
+	.strength { padding: 1px 10px;}
+
+	.hide { display: none; }
+	.show { display: block; }
+
+	#message-oper {
+		display: none;
+        position: absolute;
+        top: 120px;
+        left: 510px;
+        border: 5px solid #32936F;
+        padding: 10px;
+        border-radius: 3px;
+        background: white;
+	}
+	#message-oper i {
+		color: #32936F;
+		padding-right: 10px;
+	}
+
+	#message-ad {
+		display: none;
+        position: absolute;
+        top: 120px;
+        left: 547px;
+        border: 5px solid #32936F;
+        padding: 10px;
+        border-radius: 3px;
+		z-index: 2;
+		background: white;
+	}
+	#message-ad i {
+		color: #32936F;
+		padding-right: 10px;
+	}
+	#message-error {
+		display: none;
+        position: absolute;
+        top: 120px;
+        left: 470px;
+        border: 5px solid #A31621;
+        padding: 10px;
+        border-radius: 3px;
+        background: white;
+	}
+	#message-error i {
+		color: #DB222A;
+		padding-right: 10px;
+	}
+
+	#message-errorPass {
+		display: none;
+        position: absolute;
+        top: 120px;
+        left: 675px	;
+        border: 5px solid #A31621;
+        padding: 10px;
+        border-radius: 3px;
+        background: white;
+	}
+	#message-errorPass i {
+		color: #DB222A;
+		padding-right: 10px;
+	}
+	#message-errorUser {
+		display: none;
+        position: absolute;
+        top: 120px;
+        left: 400px	;
+        border: 5px solid #A31621;
+        padding: 10px;
+        border-radius: 3px;
+        background: white;
+	}
+	#message-errorUser i {
+		color: #DB222A;
+		padding-right: 10px;
+	}
