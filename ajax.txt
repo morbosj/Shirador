@@ -1,0 +1,56 @@
+
+    Admin registration ajax
+	<script> 
+		$(document).ready(function(){
+      		$("#registeradmin").submit(function(event) {
+      				var fullnameAd = $("#fullnameAd").val();
+                    var userAd = $("#userAd").val();
+                    var passAd = $("#passAd").val();
+
+
+                    event.preventDefault();
+                    $.ajax({
+                        type: "POST",
+                        url: "php/registeradmin.php",
+                        data: "fullnameAd=" + fullnameAd + "&userAd=" + userAd + "&passAd=" + passAd,
+                        success: function(data) {
+                           $("#message-ad").fadeIn(1000);
+                           $("#message-ad").fadeOut(500);
+                        }
+                    });
+
+
+            });
+        });	
+
+
+	</script>
+
+    Operator registration ajax
+     <script> 
+		$(document).ready(function(){
+      		$("#registeroper").submit(function(event) {
+      				var fullnameOper = $("#fullnameOper").val();
+                    var addressOper = $("#addressOper").val();
+                    var cellp = $("#cellp").val();
+                    var userOper = $("#userOper").val();
+                    var passOper = $("#passOper").val();
+
+
+                    event.preventDefault();
+                    $.ajax({
+                        type: "POST",
+                        url: "php/registeroper.php",
+                        data: "fullnameOper=" + fullnameOper + "&addressOper=" + addressOper + "&cellp=" + cellp + "&userOper=" + userOper + "&passOper=" + passOper,
+                        success: function(data) {
+                           $("#message-oper").fadeIn(1000);
+                           $("#message-oper").fadeOut(500);
+                        }
+                    });
+
+
+            });
+        });	
+
+
+	</script>	
