@@ -1,0 +1,31 @@
+$(document).ready(function(){
+      $(document).on('click', '.edit_data', function(){
+        var id_product = $(this).attr("id_product");
+
+        $.ajax({
+          url: "update.php",
+          method: "POST",
+          data: {id_product:id_product},
+          dataType: "json",
+          success: function(data){
+            $('#product_code').val(data.product_code);
+            $('#product_name').val(data.product_name);
+            $('#brand').val(data.brand);
+            $('#category').val(data.category);
+            $('#status').val(data.status);
+            $('#id_product').val(data.id_product);
+
+            $('#insert').val("Update");
+            $('#myModal').modal('show');
+          }
+        });
+
+      });
+    });
+
+
+
+    if($_POST['id_product'] != ''){
+                      $query = "UPDATE product2 SET product_code = '$product_code', product_name = '$product_name', brand = '$brand', category = '$category', status = '$status' WHERE id_product = '". $_POST['id_product']."'";
+                      $message = 'Data Updated';
+                    }
